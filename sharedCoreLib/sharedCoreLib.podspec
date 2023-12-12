@@ -1,19 +1,19 @@
 Pod::Spec.new do |spec|
     spec.name                     = 'sharedCoreLib'
-    spec.version                  = '1.0.2'
-    spec.homepage                 = 'https://bitbucket.org/CodeGorilla/cg-lib-kmm-artifactory'
+    spec.version                  = '1.0.0'
+    spec.homepage                 = 'https://github.com/thegr8manef/CoreLib'
     spec.source                   = { :http=> ''}
-    spec.authors                  = 'Tom Snyder, Code-Gorilla.com'
+    spec.authors                  = 'Thegr8manef, Manef Jedidi'
     spec.license                  = 'Apache-2.0'
-    spec.summary                  = 'KMM Library Artifact'
-    spec.vendored_frameworks      = 'build/cocoapods/framework/CodeGorillaArtifact.framework'
+    spec.summary                  = 'CoreLib'
+    spec.vendored_frameworks      = 'build/cocoapods/framework/CoreLib.framework'
     spec.libraries                = 'c++'
     spec.ios.deployment_target = '14.1'
                 
                 
     spec.pod_target_xcconfig = {
         'KOTLIN_PROJECT_PATH' => ':sharedCoreLib',
-        'PRODUCT_MODULE_NAME' => 'CodeGorillaArtifact',
+        'PRODUCT_MODULE_NAME' => 'CoreLib',
     }
                 
     spec.script_phases = [
