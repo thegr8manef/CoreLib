@@ -18,9 +18,9 @@ kotlin {
 
     cocoapods {
         summary = "CoreLib"
-        homepage = "https://bitbucket.org/CodeGorilla/cg-lib-kmm-artifactory"
+        homepage = "https://github.com/thegr8manef/CoreLib"
         version = "1.0.0"
-        authors = "Tom Snyder, Code-Gorilla.com"
+        authors = "Thegr8manef, Manef Jedidi"
         license = "Apache-2.0"
         ios.deploymentTarget = "14.1"
         framework {
@@ -32,7 +32,7 @@ kotlin {
         val ktor_version = "2.2.4"
         val commonMain by getting {
             dependencies {
-                implementation("io.ktor:ktor-client-core:$ktor_version")
+                //implementation("io.ktor:ktor-client-core:$ktor_version")
             }
         }
 
@@ -44,7 +44,7 @@ kotlin {
 
         val androidMain by getting {
             dependencies {
-                implementation("io.ktor:ktor-client-okhttp:$ktor_version")
+                //implementation("io.ktor:ktor-client-okhttp:$ktor_version")
             }
         }
 
@@ -58,7 +58,7 @@ kotlin {
             iosArm64Main.dependsOn(this)
             iosSimulatorArm64Main.dependsOn(this)
             dependencies {
-                implementation("io.ktor:ktor-client-ios:$ktor_version")
+                //implementation("io.ktor:ktor-client-ios:$ktor_version")
             }
         }
         val iosX64Test by getting
