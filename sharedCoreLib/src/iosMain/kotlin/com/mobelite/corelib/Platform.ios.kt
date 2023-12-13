@@ -1,10 +1,10 @@
-package com.example.libkmm
+package com.mobelite.corelib
 
-import com.example.libkmm.DevicePlatform.UIKit.UIDevice
+import platform.UIKit.UIDevice
 
 class IOSPlatform: DevicePlatform {
     override val model: String = UIDevice.currentDevice.model
-    override val brand: String = UIDevice.currentDevice.userInterfaceIdiom
+    override val brand: String = "Apple"
 }
 
 actual fun getDevicePlatform(): DevicePlatform = IOSPlatform()

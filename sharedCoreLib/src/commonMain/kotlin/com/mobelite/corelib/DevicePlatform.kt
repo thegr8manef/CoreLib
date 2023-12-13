@@ -1,4 +1,4 @@
-package com.example.libkmm
+package com.mobelite.corelib
 
 interface DevicePlatform {
     val model: String

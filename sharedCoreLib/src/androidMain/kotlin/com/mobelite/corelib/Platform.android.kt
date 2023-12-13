@@ -1,4 +1,4 @@
-package com.example.libkmm
+package com.mobelite.corelib
 
 class AndroidPlatform : DevicePlatform {
     override val model: String = android.os.Build.MODEL

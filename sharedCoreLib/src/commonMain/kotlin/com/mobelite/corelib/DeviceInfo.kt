@@ -1,4 +1,5 @@
-package com.example.libkmm
+package com.mobelite.corelib
+
 
 class DeviceInfo {
     private val platform: DevicePlatform = getDevicePlatform()
