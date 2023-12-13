@@ -1,7 +1,8 @@
-package com.mobelite.corelib
+package com.example.libkmm
 
-class AndroidPlatform : Platform {
-    override val name: String = "Android ${android.os.Build.VERSION.SDK_INT}"
+class AndroidPlatform : DevicePlatform {
+    override val model: String = android.os.Build.MODEL
+    override val brand: String = android.os.Build.BRAND
 }
 
-actual fun getPlatform(): Platform = AndroidPlatform()
+actual fun getDevicePlatform(): DevicePlatform = AndroidPlatform()
