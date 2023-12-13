@@ -1,8 +1,8 @@
 Pod::Spec.new do |spec|
     spec.name                     = 'sharedCoreLib'
-    spec.version                  = '1.0.0'
+    spec.version                  = '1.1.0'
     spec.homepage                 = 'https://github.com/thegr8manef/CoreLib'
-    spec.source                   = { :http=> ''}
+    spec.source                   = { :git=> 'https://github.com/thegr8manef/CoreLib.git', :tag => '1.1.0'}
     spec.authors                  = 'Thegr8manef, Manef Jedidi'
     spec.license                  = 'Apache-2.0'
     spec.summary                  = 'CoreLib'
